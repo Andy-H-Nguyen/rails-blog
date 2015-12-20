@@ -2,6 +2,15 @@ $navbar-default-bg: #DC143C;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// General //
+h1 {
+ color: lighten(#000000,25%); 
+ margin-top: 10px;
+ margin-bottom: 25px;
+}
+
+
 // Navbar //**********************************
 #logo {
   float: left;
