@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
         flash[:success] = "You have logged in"
         redirect_to user_path(user)
       else
-        flash.now[:danger] = "Email and password combin ation invalid"
+        flash.now[:danger] = "Email and password combination invalid"
         render 'new'
       end
   end
