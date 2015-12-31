@@ -24,8 +24,17 @@
          </div>
       </div>
       <div class="form-group">
+         <div class="row">
+            <div class="col-sm-offset-2 col-sm-10" align=left>
+               <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
+                  <% cb.label(class: "checkbox-inline input_checkbox") {cb.check_box(class: "checkbox") + cb.text} %>
+               <% end %>
+            </div>
+         </div>
+      </div>
+      <div class="form-group">
          <div class="col-sm-offset-2 col-sm-4" align=left>
-            <p><%= f.submit class: 'btn btn-primary btn-lg' %></p>
+               <p><%= f.submit class: 'btn btn-primary btn-lg' %></p>
          </div>
          <div class="col-sm-4" align=right>
             <%= link_to "Return to article listing", articles_path ,class: 'btn btn-danger btn-lg' %>
