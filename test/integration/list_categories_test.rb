@@ -4,7 +4,6 @@ class ListCategoriesTest < ActionDispatch::IntegrationTest
   
   def setup
     @category = Category.create(name: "sports")
-    @category_2 = Category.create(name: "games")
   end
 
   test "should show categories listing" do
