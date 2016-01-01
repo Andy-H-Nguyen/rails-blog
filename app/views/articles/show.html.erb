@@ -16,7 +16,11 @@
   </ul>
 <% end %>
   <h4 class="center description"><strong>Description:</strong></h4>
-  <hr><%= simple_format(@article.description) %>
+  <hr>
+  <%= simple_format(@article.description) %>
+  <% if @article.categories.any? %>
+    <p>Categories: <%= render @article.categories %></p>
+  <% end %>
   <div class="article-actions">
     <div class="row">
       <div class="col-xs-12">
