@@ -4,4 +4,4 @@ This Rails app features the basic CRUD operations for articles, users and catego
 
 At the moment, regular users are restricted to creating articles and deleting their own articles.
 
-Admin users can delete any articles and users and are able create and delete categories.
+Admin users can delete any articles and users in addition to creating and delete categories.
