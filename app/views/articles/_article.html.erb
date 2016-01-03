@@ -6,11 +6,11 @@
             <%= link_to article.title, article_path(article) %>
          </div>
          <div class="article-body">
-            <p><%= truncate(article.description, length: 100) %></p>
+            <p><%= truncate(article.description, length: 100) %></p>      
+            <div class="article-meta-details">
             <% if article.categories.any? %>
               <p>Categories: <%= render article.categories %></p>
-            <% end %>            
-            <div class="article-meta-details">
+            <% end %>  
             <small>Created by: <%= article.user.username if article.user %>, 
                    Created at: <%= time_ago_in_words(article.created_at) %> ago,
                    Updated at: <%= time_ago_in_words(article.updated_at) %> ago,    
