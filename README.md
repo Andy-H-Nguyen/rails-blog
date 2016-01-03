@@ -1,5 +1,4 @@
-=========
-Alphablog
+# Alphablog
 
 This Rails app features the basic CRUD operations for articles, users and categories. 
 
