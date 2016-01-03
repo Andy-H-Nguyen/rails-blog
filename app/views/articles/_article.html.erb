@@ -6,7 +6,7 @@
             <%= link_to article.title, article_path(article) %>
          </div>
          <div class="article-body">
-            <%= truncate(article.description, length: 100) %>
+            <p><%= truncate(article.description, length: 100) %></p>
             <% if article.categories.any? %>
               <p>Categories: <%= render article.categories %></p>
             <% end %>            
