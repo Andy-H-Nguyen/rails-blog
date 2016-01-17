@@ -6,7 +6,8 @@ Admin users can delete any articles and users in addition to creating and delete
 
 ## How to use
 
-Head on over to: http://alpha-blog-andy.herokuapp.com/.
+Head on over to: http://alpha-blog-andy.herokuapp.com/
+
 As a logged out user you cannot edit or create articles so please sign up to access these features.
 There are also admin-only features, only admins can delete other users articles, and create categories. 
 
